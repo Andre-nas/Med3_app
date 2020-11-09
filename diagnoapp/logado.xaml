@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="diagnoapp.logado">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Image Source="h_img" />
+            </StackLayout>
+
+            <StackLayout>
+                <StackLayout VerticalOptions="CenterAndExpand"    Orientation="Vertical" Margin="0,0,0,10">
+
+                    <ImageButton Source="m_exames" 
+                             BackgroundColor="Transparent" 
+                             Margin="0,0,0,0"
+                             HeightRequest="130"
+                             >
+
+                    </ImageButton>
+                    
+                    <Label HeightRequest="10"></Label>
+                    
+                    <ImageButton Source="r_exames" 
+                             BackgroundColor="Transparent" 
+                             Margin="0,0,0,0"
+                             HeightRequest="130"
+                             >
+
+                    </ImageButton>
+
+               
+                </StackLayout>
+            </StackLayout>
+            
+            <StackLayout>
+                <Image Source="f_img" />
+            </StackLayout>
+        </StackLayout>
+
+        
+    </ContentPage.Content>
+</ContentPage>

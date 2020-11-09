@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="diagnoapp.Home"
+             Title="Home"
+             BackgroundImageSource="bg_background_home">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand" Orientation="Horizontal" Margin="0,0,0,0">
+                <Image  
+                        Source="logo_med3.png"  
+                        HorizontalOptions="FillAndExpand"
+                        HeightRequest="100"
+                 />
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand"    Orientation="Vertical" Margin="0,0,0,10">
+
+                <ImageButton Source="login_btn" 
+                             BackgroundColor="Transparent" 
+                             Margin="0,0,0,30"
+                             HeightRequest="70"
+                             Clicked="logado">
+
+                </ImageButton>
+                <Label HeightRequest="10"></Label>
+                <ImageButton Source="novo_cadastro" 
+                             BackgroundColor="Transparent" 
+                             Margin="0,0,0,100"
+                             HeightRequest="150"
+                             Clicked="cadastro">
+
+                </ImageButton>
+
+                <!--<Button 
+                        BackgroundColor="White" 
+                        FontFamily="arial" 
+                        TextColor="DarkBlue" 
+                        HorizontalOptions="FillAndExpand"  
+                        
+                        Text="Ja sou cadastrado!" 
+                        FontAttributes="Bold"
+                    />
+                <Button   
+                        BackgroundColor="White"  
+                        FontFamily="arial" 
+                        TextColor="DarkBlue" 
+                        HorizontalOptions="FillAndExpand"   
+                        Text="Cadastre-se" 
+                        FontAttributes="Bold" 
+                        Clicked="cadastro"
+                       
+                    />-->
+
+            
+
+            </StackLayout>
+
+
+
+
+        </StackLayout>
+
+    </ContentPage.Content>
+    
+</ContentPage>

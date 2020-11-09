@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="diagnoapp.Cad1"
+             Title="Cadastro"
+             BackgroundColor="WhiteSmoke">
+    <ContentPage.Content>
+        
+        <FlexLayout Direction="Column"
+            JustifyContent="SpaceEvenly">
+            
+            
+            <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,0,200">
+                <StackLayout VerticalOptions="CenterAndExpand" Orientation="Horizontal" Margin="0,0,0,50">
+                    <Image  
+                        Source="logo_med3.png"  
+                        HorizontalOptions="FillAndExpand"
+                        HeightRequest="60"
+                 />
+                </StackLayout>
+
+                <Label HorizontalTextAlignment="Center" 
+                       Text="1/3" FontSize="40" 
+                       TextColor="LightSeaGreen"
+                       FontAttributes="Bold">
+                    
+                </Label>
+                <Entry Placeholder="Entre com o Nome" 
+                       x:Name="nome" 
+                       PlaceholderColor="Silver"  
+                       ClearButtonVisibility="WhileEditing" >
+                    
+                </Entry>
+                <Entry Placeholder="Entre com o Telefone" 
+                       x:Name="telefone" 
+                       PlaceholderColor="Silver" 
+                       ClearButtonVisibility="WhileEditing" >
+                    
+                </Entry>
+                <ImageButton Source="avancar_btn" 
+                             BackgroundColor="Transparent" 
+                             Margin="300,0,0,0"
+                             Clicked="ImageButton_Clicked">
+                    
+                </ImageButton>
+            </StackLayout>
+            
+            
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

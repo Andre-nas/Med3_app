@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="diagnoapp.cadfoto"
+             Title="Cadastro">
+    
+    <ContentPage.Content>
+
+        <FlexLayout Direction="Column"
+            JustifyContent="SpaceEvenly">
+
+
+            <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,0,200">
+                
+                <Label HorizontalTextAlignment="Center" 
+                       Text="4/4" FontSize="40" 
+                       TextColor="LightSeaGreen"
+                       FontAttributes="Bold">
+
+                </Label>
+                <Image Source="rosto_foto" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="CenterAndExpand" 
+                       WidthRequest="150">
+                    
+                </Image>
+                
+                <ImageButton Source="avancar_btn" 
+                             BackgroundColor="Transparent" 
+                             Margin="300,0,0,0"
+                              Clicked="ImageButton_Clicked">
+
+                </ImageButton>
+                
+                <Label TextColor="White" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="CenterAndExpand" 
+                       Text="Clique aqui para ativar sua camera"
+                       >
+
+                </Label>
+                
+                
+                <Image Source="icon_foto" WidthRequest="30" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+                </Image>
+                
+            </StackLayout>
+
+
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

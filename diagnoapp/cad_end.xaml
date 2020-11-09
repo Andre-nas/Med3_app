@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="diagnoapp.cad_end"
+             BackgroundImageSource="bg_background_home"
+             Title="Cadastro">
+    <ContentPage.Content>
+
+        <FlexLayout Direction="Column"
+            JustifyContent="SpaceEvenly">
+
+
+            <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,0,40">
+                <Image Source="logo_med3.png" 
+                       WidthRequest="170" 
+                       Margin="0,0,0,100" 
+                       VerticalOptions="Center"
+                       HorizontalOptions="FillAndExpand" />
+
+                <Label HorizontalTextAlignment="Center" 
+                       Text="Parabéns, seu cadastro foi finalizado com Sucesso!" FontSize="20" 
+                       TextColor="LightSeaGreen"
+                       FontAttributes="Bold">
+
+                </Label>
+                <Label HorizontalTextAlignment="Center" 
+                       Text="Você receberá um SMS com o código de ativaçao de sua conta" FontSize="20" 
+                       TextColor="White" BackgroundColor="CadetBlue" HeightRequest="70"
+                       FontAttributes="Bold">
+
+                </Label>
+                <Entry Text="    -      -      -       -" 
+                       VerticalOptions="FillAndExpand" 
+                       HorizontalOptions="FillAndExpand" 
+                       FontSize="50" 
+                       x:Name="sms" TextColor="LightSeaGreen" ></Entry>
+                <Button Text="Entra" 
+                        BackgroundColor="LightGreen" 
+                        FontSize="20"
+                        TextColor="White" VerticalOptions="Center"
+                        HorizontalOptions="FillAndExpand"></Button>
+                
+
+               
+          
+            </StackLayout>
+
+
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>
